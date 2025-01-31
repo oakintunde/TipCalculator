@@ -28,6 +28,12 @@ public class MainActivity extends AppCompatActivity
         //get references to the UI controls
         billAmountEditText = findViewById(R.id.billAmountEditText);
         percentTextView = findViewById(R.id.percentTextView);
+        percentUpButton = findViewById(R.id.percentUpButton);
+        percentDownButton = findViewById(R.id.percentDownButton);
+        tipTextView = findViewById(R.id.tipTextView);
+        totalTextView = findViewById(R.id.totalTextView);
+
+        //set the listeners
         
     }
 
