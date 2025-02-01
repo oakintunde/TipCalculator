@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity
             billAmount = Float.parseFloat(billAmountString);
         }
         //calculate tip and total
-        float tipAmount = billAmount + tipPercent;
+        float tipAmount = tipPercent + billAmount;
         float totalAmount = billAmount + tipAmount;
 
         //display the result
@@ -71,11 +71,11 @@ public class MainActivity extends AppCompatActivity
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.percentDownButton:
-                tipPercent = tipPercent - 0.01f ;
+                tipPercent -= 0.01f;
                 calculateAndDisplay();
                 break;
             case R.id.percentUpButton:
-                tipPercent = tipPercent + 0.01f;
+                tipPercent = tipPercent + 0.01F;
                 calculateAndDisplay();
                 break;
         }
